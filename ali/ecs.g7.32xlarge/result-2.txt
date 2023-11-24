@@ -1,0 +1,146 @@
+20231124_160352_612025 2595b25 1cfcc40 Version: v2.2.0
+Checking error channel; ignore this trace
+20231124_160352_612270 2595b25 1cfcc40 zkWarning: Checking warning channel; ignore this trace
+20231124_160352_612275 2595b25 1cfcc40 Config file: testvectors/config_runFile_BatchProof.json
+20231124_160352_616663 2595b25 1cfcc40 Number of cores=128
+20231124_160352_616813 2595b25 1cfcc40 IP address=172.16.4.248
+20231124_160352_616817 2595b25 1cfcc40 Configuration:
+20231124_160352_616819 2595b25 1cfcc40     proverID=2595b251-af5d-4661-9698-d588a433b2d3
+20231124_160352_616820 2595b25 1cfcc40     proverName=UNSPECIFIED
+20231124_160352_616822 2595b25 1cfcc40     runExecutorServer=0
+20231124_160352_616824 2595b25 1cfcc40     runHashDBServer=1
+20231124_160352_616825 2595b25 1cfcc40     runAggregatorClient=0
+20231124_160352_616827 2595b25 1cfcc40     runFileGenBatchProof=true
+20231124_160352_616828 2595b25 1cfcc40     executeInParallel=1
+20231124_160352_616830 2595b25 1cfcc40     useMainExecGenerated=1
+20231124_160352_616831 2595b25 1cfcc40     useMainExecC=0
+20231124_160352_616833 2595b25 1cfcc40     executorTimeStatistics=0
+20231124_160352_616834 2595b25 1cfcc40     saveOutputToFile=true
+20231124_160352_616835 2595b25 1cfcc40     saveProofToFile=true
+20231124_160352_616837 2595b25 1cfcc40     loadDBToMemCache=1
+20231124_160352_616838 2595b25 1cfcc40     logExecutorServerTxs=true
+20231124_160352_616839 2595b25 1cfcc40     executorServerPort=50071
+20231124_160352_616841 2595b25 1cfcc40     executorClientPort=50071
+20231124_160352_616842 2595b25 1cfcc40     executorClientHost=127.0.0.1
+20231124_160352_616844 2595b25 1cfcc40     executorClientLoops=1
+20231124_160352_616845 2595b25 1cfcc40     executorClientCheckNewStateRoot=0
+20231124_160352_616846 2595b25 1cfcc40     hashDBServerPort=50061
+20231124_160352_616848 2595b25 1cfcc40     hashDBURL=local
+20231124_160352_616849 2595b25 1cfcc40     hashDB64=0
+20231124_160352_616851 2595b25 1cfcc40     dbCacheSynchURL=
+20231124_160352_616852 2595b25 1cfcc40     aggregatorServerPort=50081
+20231124_160352_616853 2595b25 1cfcc40     aggregatorClientPort=50081
+20231124_160352_616855 2595b25 1cfcc40     aggregatorClientHost=127.0.0.1
+20231124_160352_616856 2595b25 1cfcc40     aggregatorClientMockTimeout=60000000
+20231124_160352_616858 2595b25 1cfcc40     aggregatorClientWatchdogTimeout=60000000
+20231124_160352_616859 2595b25 1cfcc40     aggregatorClientMaxStreams=0
+20231124_160352_616861 2595b25 1cfcc40     inputFile=testvectors/batchProof/input_executor_3.json
+20231124_160352_616862 2595b25 1cfcc40     inputFile2=testvectors/batchProof/input_executor_1.json
+20231124_160352_616863 2595b25 1cfcc40     outputPath=runtime/output
+20231124_160352_616865 2595b25 1cfcc40     configPath=config
+20231124_160352_616866 2595b25 1cfcc40     rom=src/main_sm/fork_5/scripts/rom.json
+20231124_160352_616867 2595b25 1cfcc40     zkevmCmPols=
+20231124_160352_616869 2595b25 1cfcc40     c12aCmPols=runtime/c12a.commit
+20231124_160352_616870 2595b25 1cfcc40     recursive1CmPols=
+20231124_160352_616871 2595b25 1cfcc40     zkevmConstPols=config/zkevm/zkevm.const
+20231124_160352_616873 2595b25 1cfcc40     c12aConstPols=config/c12a/c12a.const
+20231124_160352_616874 2595b25 1cfcc40     mapConstPolsFile=0
+20231124_160352_616875 2595b25 1cfcc40     zkevmConstantsTree=config/zkevm/zkevm.consttree
+20231124_160352_616876 2595b25 1cfcc40     c12aConstantsTree=config/c12a/c12a.consttree
+20231124_160352_616878 2595b25 1cfcc40     mapConstantsTreeFile=0
+20231124_160352_616879 2595b25 1cfcc40     finalVerkey=config/final/final.fflonk.verkey.json
+20231124_160352_616880 2595b25 1cfcc40     zkevmVerifier=config/zkevm/zkevm.verifier.dat
+20231124_160352_616882 2595b25 1cfcc40     recursive1Verifier=config/recursive1/recursive1.verifier.dat
+20231124_160352_616883 2595b25 1cfcc40     recursive2Verifier=config/recursive2/recursive2.verifier.dat
+20231124_160352_616884 2595b25 1cfcc40     recursive2Verkey=config/recursive2/recursive2.verkey.json
+20231124_160352_616886 2595b25 1cfcc40     recursivefVerifier=config/recursivef/recursivef.verifier.dat
+20231124_160352_616887 2595b25 1cfcc40     finalVerifier=config/final/final.verifier.dat
+20231124_160352_616893 2595b25 1cfcc40     finalStarkZkey=config/final/final.fflonk.zkey
+20231124_160352_616895 2595b25 1cfcc40     publicsOutput=public.json
+20231124_160352_616896 2595b25 1cfcc40     proofFile=proof.json
+20231124_160352_616897 2595b25 1cfcc40     keccakScriptFile=config/scripts/keccak_script.json
+20231124_160352_616899 2595b25 1cfcc40     keccakPolsFile=keccak_pols.json
+20231124_160352_616900 2595b25 1cfcc40     keccakConnectionsFile=keccak_connections.json
+20231124_160352_616901 2595b25 1cfcc40     storageRomFile=config/scripts/storage_sm_rom.json
+20231124_160352_616903 2595b25 1cfcc40     zkevmStarkInfo=config/zkevm/zkevm.starkinfo.json
+20231124_160352_616904 2595b25 1cfcc40     c12aStarkInfo=config/c12a/c12a.starkinfo.json
+20231124_160352_616906 2595b25 1cfcc40     databaseURL=local...
+20231124_160352_616907 2595b25 1cfcc40     dbNodesTableName=state.nodes
+20231124_160352_616908 2595b25 1cfcc40     dbProgramTableName=state.program
+20231124_160352_616909 2595b25 1cfcc40     dbMultiWrite=1
+20231124_160352_616911 2595b25 1cfcc40     dbMultiWriteSingleQuerySize=20971520
+20231124_160352_616912 2595b25 1cfcc40     dbConnectionsPool=1
+20231124_160352_616914 2595b25 1cfcc40     dbNumberOfPoolConnections=30
+20231124_160352_616915 2595b25 1cfcc40     dbMetrics=1
+20231124_160352_616916 2595b25 1cfcc40     dbClearCache=0
+20231124_160352_616918 2595b25 1cfcc40     dbGetTree=1
+20231124_160352_616919 2595b25 1cfcc40     dbReadOnly=0
+20231124_160352_616921 2595b25 1cfcc40     dbReadRetryCounter=10
+20231124_160352_616922 2595b25 1cfcc40     dbReadRetryDelay=100000
+20231124_160352_616923 2595b25 1cfcc40     stateManager=1
+20231124_160352_616924 2595b25 1cfcc40     stateManagerPurge=1
+20231124_160352_616926 2595b25 1cfcc40     stateManagerPurgeTxs=1
+20231124_160352_616927 2595b25 1cfcc40     cleanerPollingPeriod=600
+20231124_160352_616928 2595b25 1cfcc40     requestsPersistence=3600
+20231124_160352_616930 2595b25 1cfcc40     maxExecutorThreads=20
+20231124_160352_616931 2595b25 1cfcc40     maxProverThreads=8
+20231124_160352_616932 2595b25 1cfcc40     maxHashDBThreads=8
+20231124_160352_616934 2595b25 1cfcc40     dbMTCacheSize=8192
+20231124_160352_616935 2595b25 1cfcc40     useAssociativeCache=0
+20231124_160352_616936 2595b25 1cfcc40     log2DbMTAssociativeCacheSize=24
+20231124_160352_616937 2595b25 1cfcc40     log2DbMTAssociativeCacheIndexesSize=28
+20231124_160352_616939 2595b25 1cfcc40     dbProgramCacheSize=1024
+20231124_160352_616940 2595b25 1cfcc40     loadDBToMemTimeout=30000000
+20231124_160352_616941 2595b25 1cfcc40     fullTracerTraceReserveSize=262144
+20231124_160352_616943 2595b25 1cfcc40     ECRecoverPrecalc=0
+20231124_160352_616944 2595b25 1cfcc40     ECRecoverPrecalcNThreads=16
+20231124_160352_616946 2595b25 1cfcc40 --> WHOLE_PROCESS starting...
+20231124_160352_617041 2595b25 1cfcc40 --> GOLDILOCKS_PRECOMPUTED_INIT starting...
+20231124_160353_182661 2595b25 1cfcc40 <-- GOLDILOCKS_PRECOMPUTED_INIT done: 0.565613 s
+20231124_160353_183221 2595b25 1cfcc40 --> PROVER_CONSTRUCTOR starting...
+20231124_160353_183239 2595b25 1cfcc40 --> ROM_LOAD starting...
+ROM size: 4925 lines
+20231124_160353_256605 2595b25 1cfcc40 <-- ROM_LOAD done: 0.073364 s
+20231124_160353_261119 2595b25 1cfcc40 --> ROM_LOAD starting...
+ROM size: 4944 lines
+20231124_160353_332298 2595b25 1cfcc40 <-- ROM_LOAD done: 0.071178 s
+20231124_160353_336482 2595b25 1cfcc40 --> ROM_LOAD starting...
+ROM size: 5014 lines
+20231124_160353_407049 2595b25 1cfcc40 <-- ROM_LOAD done: 0.070569 s
+20231124_160353_411273 2595b25 1cfcc40 --> ROM_LOAD starting...
+20231124_160353_425428 2595b25 1cfcc40 ROM size: 5017 lines
+20231124_160353_482270 2595b25 1cfcc40 <-- ROM_LOAD done: 0.070994 s
+20231124_160353_486586 2595b25 1cfcc40 --> ROM_LOAD starting...
+20231124_160353_500866 2595b25 1cfcc40 ROM size: 5045 lines
+20231124_160353_557999 2595b25 1cfcc40 <-- ROM_LOAD done: 0.071411 s
+20231124_160353_565114 2595b25 1cfcc40 --> BINARY_EXECUTOR starting...
+20231124_160353_565125 2595b25 1cfcc40 --> BINARY_BUILD_FACTORS starting...
+20231124_160353_750714 2595b25 1cfcc40 <-- BINARY_BUILD_FACTORS done: 0.185579 s
+20231124_160353_750746 2595b25 1cfcc40 --> BINARY_BUILD_RESET starting...
+20231124_160353_836697 2595b25 1cfcc40 <-- BINARY_BUILD_RESET done: 0.085938 s
+20231124_160353_836727 2595b25 1cfcc40 <-- BINARY_EXECUTOR done: 0.271612 s
+20231124_160353_836756 2595b25 1cfcc40 --> KECCAK_F_SM_EXECUTOR_LOAD starting...
+20231124_160354_787272 2595b25 1cfcc40 <-- KECCAK_F_SM_EXECUTOR_LOAD done: 0.950509 s
+20231124_160804_519203 2595b25 57e1640 proverThread() started
+20231124_160804_519263 2595b25 1cfcc40 --> STARK_INFO_LOAD starting...
+20231124_160804_519282 2595b25 4fe0640 cleanerThread() started
+20231124_160805_902178 2595b25 1cfcc40 <-- STARK_INFO_LOAD done: 1.382962 s
+20231124_160806_236340 2595b25 1cfcc40 Prover::genBatchProof() successfully allocated 303936045056 bytes
+Sat Nov 25 00:08:06 2023  [TRACE]: > Reading zkey file
+Sat Nov 25 00:08:06 2023  [TRACE]: > Starting fft
+Sat Nov 25 00:08:06 2023  [TRACE]: ... Loading QL, QR, QM, QO, & QC polynomial coefficients and evaluations
+Sat Nov 25 00:08:06 2023  [TRACE]: ... Loading Sigma1, Sigma2 & Sigma3 polynomial coefficients and evaluations
+Sat Nov 25 00:08:07 2023  [TRACE]: ... Loading C0 polynomial coefficients
+Sat Nov 25 00:08:07 2023  [TRACE]: ... Loading Lagrange evaluations
+Sat Nov 25 00:08:07 2023  [TRACE]: ... Loading Powers of Tau evaluations
+Sat Nov 25 00:08:08 2023  [TRACE]: ... Loading A, B & C map buffers
+Sat Nov 25 00:08:08 2023  [TRACE]: ··· Loading additions
+Sat Nov 25 00:08:08 2023  [TRACE]: ··· Loading map buffers
+20231124_160808_124735 2595b25 1cfcc40 --> STARK_INFO_LOAD starting...
+20231124_160808_338315 2595b25 1cfcc40 <-- STARK_INFO_LOAD done: 0.213573 s
+20231124_160808_372893 2595b25 1cfcc40 --> STARK_INFO_LOAD starting...
+20231124_160809_652362 2595b25 1cfcc40 <-- STARK_INFO_LOAD done: 1.279462 s
+20231124_160810_067212 2595b25 1cfcc40 --> LOAD_CONST_POLS_TO_MEMORY starting...
+20231124_160942_243446 2595b25 1cfcc40 Starks::Starks() successfully copied 14629732352 bytes from constant file config/zkevm/zkevm.const
+20231124_160942_243489 2595b25 1cfcc40 <-- LOAD_CONST_POLS_TO_MEMORY done: 92.176275 s
+20231124_160942_243493 2595b25 1cfcc40 --> LOAD_CONST_TREE_TO_MEMORY starting...

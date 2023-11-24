@@ -1,0 +1,320 @@
+20231124_165152_861254 5effecd 26bdc40 Version: v2.2.0
+Checking error channel; ignore this trace
+20231124_165152_861295 5effecd 26bdc40 zkWarning: Checking warning channel; ignore this trace
+20231124_165152_861298 5effecd 26bdc40 Config file: testvectors/config_runFile_BatchProof.json
+20231124_165152_864134 5effecd 26bdc40 Number of cores=128
+20231124_165152_864296 5effecd 26bdc40 IP address=172.16.4.248
+20231124_165152_864301 5effecd 26bdc40 Configuration:
+20231124_165152_864302 5effecd 26bdc40     proverID=5effecd1-f95b-47f1-a42b-568e943347bc
+20231124_165152_864304 5effecd 26bdc40     proverName=UNSPECIFIED
+20231124_165152_864306 5effecd 26bdc40     runExecutorServer=0
+20231124_165152_864307 5effecd 26bdc40     runHashDBServer=1
+20231124_165152_864309 5effecd 26bdc40     runAggregatorClient=0
+20231124_165152_864310 5effecd 26bdc40     runFileGenBatchProof=true
+20231124_165152_864312 5effecd 26bdc40     executeInParallel=1
+20231124_165152_864313 5effecd 26bdc40     useMainExecGenerated=1
+20231124_165152_864315 5effecd 26bdc40     useMainExecC=0
+20231124_165152_864316 5effecd 26bdc40     executorTimeStatistics=0
+20231124_165152_864317 5effecd 26bdc40     saveOutputToFile=true
+20231124_165152_864319 5effecd 26bdc40     saveProofToFile=true
+20231124_165152_864320 5effecd 26bdc40     loadDBToMemCache=1
+20231124_165152_864322 5effecd 26bdc40     logExecutorServerTxs=true
+20231124_165152_864323 5effecd 26bdc40     executorServerPort=50071
+20231124_165152_864324 5effecd 26bdc40     executorClientPort=50071
+20231124_165152_864326 5effecd 26bdc40     executorClientHost=127.0.0.1
+20231124_165152_864327 5effecd 26bdc40     executorClientLoops=1
+20231124_165152_864328 5effecd 26bdc40     executorClientCheckNewStateRoot=0
+20231124_165152_864330 5effecd 26bdc40     hashDBServerPort=50061
+20231124_165152_864331 5effecd 26bdc40     hashDBURL=local
+20231124_165152_864332 5effecd 26bdc40     hashDB64=0
+20231124_165152_864334 5effecd 26bdc40     dbCacheSynchURL=
+20231124_165152_864335 5effecd 26bdc40     aggregatorServerPort=50081
+20231124_165152_864336 5effecd 26bdc40     aggregatorClientPort=50081
+20231124_165152_864338 5effecd 26bdc40     aggregatorClientHost=127.0.0.1
+20231124_165152_864339 5effecd 26bdc40     aggregatorClientMockTimeout=60000000
+20231124_165152_864341 5effecd 26bdc40     aggregatorClientWatchdogTimeout=60000000
+20231124_165152_864342 5effecd 26bdc40     aggregatorClientMaxStreams=0
+20231124_165152_864343 5effecd 26bdc40     inputFile=testvectors/batchProof/input_executor_3.json
+20231124_165152_864345 5effecd 26bdc40     inputFile2=testvectors/batchProof/input_executor_1.json
+20231124_165152_864346 5effecd 26bdc40     outputPath=runtime/output
+20231124_165152_864347 5effecd 26bdc40     configPath=config
+20231124_165152_864349 5effecd 26bdc40     rom=src/main_sm/fork_5/scripts/rom.json
+20231124_165152_864350 5effecd 26bdc40     zkevmCmPols=
+20231124_165152_864351 5effecd 26bdc40     c12aCmPols=runtime/c12a.commit
+20231124_165152_864353 5effecd 26bdc40     recursive1CmPols=
+20231124_165152_864354 5effecd 26bdc40     zkevmConstPols=config/zkevm/zkevm.const
+20231124_165152_864356 5effecd 26bdc40     c12aConstPols=config/c12a/c12a.const
+20231124_165152_864357 5effecd 26bdc40     mapConstPolsFile=0
+20231124_165152_864358 5effecd 26bdc40     zkevmConstantsTree=config/zkevm/zkevm.consttree
+20231124_165152_864359 5effecd 26bdc40     c12aConstantsTree=config/c12a/c12a.consttree
+20231124_165152_864361 5effecd 26bdc40     mapConstantsTreeFile=0
+20231124_165152_864362 5effecd 26bdc40     finalVerkey=config/final/final.fflonk.verkey.json
+20231124_165152_864363 5effecd 26bdc40     zkevmVerifier=config/zkevm/zkevm.verifier.dat
+20231124_165152_864364 5effecd 26bdc40     recursive1Verifier=config/recursive1/recursive1.verifier.dat
+20231124_165152_864366 5effecd 26bdc40     recursive2Verifier=config/recursive2/recursive2.verifier.dat
+20231124_165152_864367 5effecd 26bdc40     recursive2Verkey=config/recursive2/recursive2.verkey.json
+20231124_165152_864368 5effecd 26bdc40     recursivefVerifier=config/recursivef/recursivef.verifier.dat
+20231124_165152_864369 5effecd 26bdc40     finalVerifier=config/final/final.verifier.dat
+20231124_165152_864377 5effecd 26bdc40     finalStarkZkey=config/final/final.fflonk.zkey
+20231124_165152_864378 5effecd 26bdc40     publicsOutput=public.json
+20231124_165152_864380 5effecd 26bdc40     proofFile=proof.json
+20231124_165152_864381 5effecd 26bdc40     keccakScriptFile=config/scripts/keccak_script.json
+20231124_165152_864382 5effecd 26bdc40     keccakPolsFile=keccak_pols.json
+20231124_165152_864383 5effecd 26bdc40     keccakConnectionsFile=keccak_connections.json
+20231124_165152_864385 5effecd 26bdc40     storageRomFile=config/scripts/storage_sm_rom.json
+20231124_165152_864386 5effecd 26bdc40     zkevmStarkInfo=config/zkevm/zkevm.starkinfo.json
+20231124_165152_864387 5effecd 26bdc40     c12aStarkInfo=config/c12a/c12a.starkinfo.json
+20231124_165152_864389 5effecd 26bdc40     databaseURL=local...
+20231124_165152_864390 5effecd 26bdc40     dbNodesTableName=state.nodes
+20231124_165152_864391 5effecd 26bdc40     dbProgramTableName=state.program
+20231124_165152_864392 5effecd 26bdc40     dbMultiWrite=1
+20231124_165152_864394 5effecd 26bdc40     dbMultiWriteSingleQuerySize=20971520
+20231124_165152_864395 5effecd 26bdc40     dbConnectionsPool=1
+20231124_165152_864397 5effecd 26bdc40     dbNumberOfPoolConnections=30
+20231124_165152_864398 5effecd 26bdc40     dbMetrics=1
+20231124_165152_864399 5effecd 26bdc40     dbClearCache=0
+20231124_165152_864400 5effecd 26bdc40     dbGetTree=1
+20231124_165152_864401 5effecd 26bdc40     dbReadOnly=0
+20231124_165152_864403 5effecd 26bdc40     dbReadRetryCounter=10
+20231124_165152_864404 5effecd 26bdc40     dbReadRetryDelay=100000
+20231124_165152_864405 5effecd 26bdc40     stateManager=1
+20231124_165152_864406 5effecd 26bdc40     stateManagerPurge=1
+20231124_165152_864408 5effecd 26bdc40     stateManagerPurgeTxs=1
+20231124_165152_864409 5effecd 26bdc40     cleanerPollingPeriod=600
+20231124_165152_864410 5effecd 26bdc40     requestsPersistence=3600
+20231124_165152_864411 5effecd 26bdc40     maxExecutorThreads=20
+20231124_165152_864413 5effecd 26bdc40     maxProverThreads=8
+20231124_165152_864414 5effecd 26bdc40     maxHashDBThreads=8
+20231124_165152_864415 5effecd 26bdc40     dbMTCacheSize=8192
+20231124_165152_864416 5effecd 26bdc40     useAssociativeCache=0
+20231124_165152_864418 5effecd 26bdc40     log2DbMTAssociativeCacheSize=24
+20231124_165152_864419 5effecd 26bdc40     log2DbMTAssociativeCacheIndexesSize=28
+20231124_165152_864420 5effecd 26bdc40     dbProgramCacheSize=1024
+20231124_165152_864421 5effecd 26bdc40     loadDBToMemTimeout=30000000
+20231124_165152_864423 5effecd 26bdc40     fullTracerTraceReserveSize=262144
+20231124_165152_864424 5effecd 26bdc40     ECRecoverPrecalc=0
+20231124_165152_864425 5effecd 26bdc40     ECRecoverPrecalcNThreads=16
+20231124_165152_864428 5effecd 26bdc40 --> WHOLE_PROCESS starting...
+20231124_165152_864494 5effecd 26bdc40 --> GOLDILOCKS_PRECOMPUTED_INIT starting...
+20231124_165153_459113 5effecd 26bdc40 <-- GOLDILOCKS_PRECOMPUTED_INIT done: 0.594609 s
+20231124_165153_459685 5effecd 26bdc40 --> PROVER_CONSTRUCTOR starting...
+20231124_165153_459710 5effecd 26bdc40 --> ROM_LOAD starting...
+ROM size: 4925 lines
+20231124_165153_533570 5effecd 26bdc40 <-- ROM_LOAD done: 0.073855 s
+20231124_165153_538171 5effecd 26bdc40 --> ROM_LOAD starting...
+ROM size: 4944 lines
+20231124_165153_608725 5effecd 26bdc40 <-- ROM_LOAD done: 0.070553 s
+20231124_165153_612883 5effecd 26bdc40 --> ROM_LOAD starting...
+ROM size: 5014 lines
+20231124_165153_683481 5effecd 26bdc40 <-- ROM_LOAD done: 0.070596 s
+20231124_165153_687745 5effecd 26bdc40 --> ROM_LOAD starting...
+20231124_165153_701963 5effecd 26bdc40 ROM size: 5017 lines
+20231124_165153_758755 5effecd 26bdc40 <-- ROM_LOAD done: 0.071005 s
+20231124_165153_762983 5effecd 26bdc40 --> ROM_LOAD starting...
+20231124_165153_777298 5effecd 26bdc40 ROM size: 5045 lines
+20231124_165153_834135 5effecd 26bdc40 <-- ROM_LOAD done: 0.071149 s
+20231124_165153_840944 5effecd 26bdc40 --> BINARY_EXECUTOR starting...
+20231124_165153_840956 5effecd 26bdc40 --> BINARY_BUILD_FACTORS starting...
+20231124_165154_009667 5effecd 26bdc40 <-- BINARY_BUILD_FACTORS done: 0.168685 s
+20231124_165154_009706 5effecd 26bdc40 --> BINARY_BUILD_RESET starting...
+20231124_165154_081472 5effecd 26bdc40 <-- BINARY_BUILD_RESET done: 0.071756 s
+20231124_165154_081502 5effecd 26bdc40 <-- BINARY_EXECUTOR done: 0.240557 s
+20231124_165154_081545 5effecd 26bdc40 --> KECCAK_F_SM_EXECUTOR_LOAD starting...
+20231124_165155_026880 5effecd 26bdc40 <-- KECCAK_F_SM_EXECUTOR_LOAD done: 0.945326 s
+20231124_165443_951880 5effecd 26bdc40 --> STARK_INFO_LOAD starting...
+20231124_165443_951942 5effecd 17e6640 cleanerThread() started
+20231124_165443_951964 5effecd 1fe7640 proverThread() started
+20231124_165445_264694 5effecd 26bdc40 <-- STARK_INFO_LOAD done: 1.312810 s
+20231124_165445_592479 5effecd 26bdc40 Prover::genBatchProof() successfully allocated 303936045056 bytes
+Sat Nov 25 00:54:45 2023  [TRACE]: > Reading zkey file
+Sat Nov 25 00:54:45 2023  [TRACE]: > Starting fft
+Sat Nov 25 00:54:45 2023  [TRACE]: ... Loading QL, QR, QM, QO, & QC polynomial coefficients and evaluations
+Sat Nov 25 00:54:46 2023  [TRACE]: ... Loading Sigma1, Sigma2 & Sigma3 polynomial coefficients and evaluations
+Sat Nov 25 00:54:46 2023  [TRACE]: ... Loading C0 polynomial coefficients
+Sat Nov 25 00:54:47 2023  [TRACE]: ... Loading Lagrange evaluations
+Sat Nov 25 00:54:47 2023  [TRACE]: ... Loading Powers of Tau evaluations
+Sat Nov 25 00:54:47 2023  [TRACE]: ... Loading A, B & C map buffers
+Sat Nov 25 00:54:47 2023  [TRACE]: ··· Loading additions
+Sat Nov 25 00:54:47 2023  [TRACE]: ··· Loading map buffers
+20231124_165447_817508 5effecd 26bdc40 --> STARK_INFO_LOAD starting...
+20231124_165448_029603 5effecd 26bdc40 <-- STARK_INFO_LOAD done: 0.212086 s
+20231124_165448_063763 5effecd 26bdc40 --> STARK_INFO_LOAD starting...
+20231124_165449_340883 5effecd 26bdc40 <-- STARK_INFO_LOAD done: 1.277113 s
+20231124_165449_752077 5effecd 26bdc40 --> LOAD_CONST_POLS_TO_MEMORY starting...
+20231124_165551_498339 5effecd 26bdc40 Starks::Starks() successfully copied 14629732352 bytes from constant file config/zkevm/zkevm.const
+20231124_165551_498381 5effecd 26bdc40 <-- LOAD_CONST_POLS_TO_MEMORY done: 61.746304 s
+20231124_165551_498384 5effecd 26bdc40 --> LOAD_CONST_TREE_TO_MEMORY starting...
+20231124_165607_138647 5effecd 26bdc40 Starks::Starks() successfully copied 30333206512 bytes from constant file config/zkevm/zkevm.consttree
+20231124_165607_138683 5effecd 26bdc40 <-- LOAD_CONST_TREE_TO_MEMORY done: 15.640295 s
+20231124_165607_138686 5effecd 26bdc40 --> LOAD_CONST_POLS_2NS_TO_MEMORY starting...
+20231124_165620_780754 5effecd 26bdc40 <-- LOAD_CONST_POLS_2NS_TO_MEMORY done: 13.642054 s
+20231124_165620_780788 5effecd 26bdc40 --> COMPUTE_X_N_AND_X_2_NS starting...
+20231124_165620_902238 5effecd 26bdc40 <-- COMPUTE_X_N_AND_X_2_NS done: 0.121439 s
+20231124_165621_238526 5effecd 26bdc40 --> MERKLE_TREE_ALLOCATION starting...
+20231124_165621_238574 5effecd 26bdc40 <-- MERKLE_TREE_ALLOCATION done: 0.000049 s
+20231124_165621_238581 5effecd 26bdc40 --> STARK_INFO_LOAD starting...
+20231124_165621_408171 5effecd 26bdc40 <-- STARK_INFO_LOAD done: 0.169581 s
+20231124_165621_482360 5effecd 26bdc40 --> LOAD_CONST_POLS_TO_MEMORY starting...
+20231124_165621_706210 5effecd 26bdc40 Starks::Starks() successfully copied 436207616 bytes from constant file config/c12a/c12a.const
+20231124_165621_706243 5effecd 26bdc40 <-- LOAD_CONST_POLS_TO_MEMORY done: 0.223884 s
+20231124_165621_706246 5effecd 26bdc40 --> LOAD_CONST_TREE_TO_MEMORY starting...
+20231124_165622_739085 5effecd 26bdc40 Starks::Starks() successfully copied 2013265904 bytes from constant file config/c12a/c12a.consttree
+20231124_165622_739116 5effecd 26bdc40 <-- LOAD_CONST_TREE_TO_MEMORY done: 1.032866 s
+20231124_165622_739118 5effecd 26bdc40 --> LOAD_CONST_POLS_2NS_TO_MEMORY starting...
+20231124_165623_554577 5effecd 26bdc40 <-- LOAD_CONST_POLS_2NS_TO_MEMORY done: 0.815449 s
+20231124_165623_554599 5effecd 26bdc40 --> COMPUTE_X_N_AND_X_2_NS starting...
+20231124_165623_571832 5effecd 26bdc40 <-- COMPUTE_X_N_AND_X_2_NS done: 0.017228 s
+20231124_165623_626785 5effecd 26bdc40 --> MERKLE_TREE_ALLOCATION starting...
+20231124_165623_626824 5effecd 26bdc40 <-- MERKLE_TREE_ALLOCATION done: 0.000039 s
+20231124_165623_626830 5effecd 26bdc40 --> STARK_INFO_LOAD starting...
+20231124_165623_788614 5effecd 26bdc40 <-- STARK_INFO_LOAD done: 0.161772 s
+20231124_165623_838795 5effecd 26bdc40 --> LOAD_CONST_POLS_TO_MEMORY starting...
+20231124_165623_845492 5effecd 26bdc40 Starks::Starks() successfully copied 54525952 bytes from constant file config/recursive1/recursive1.const
+20231124_165623_845518 5effecd 26bdc40 <-- LOAD_CONST_POLS_TO_MEMORY done: 0.006722 s
+20231124_165623_845520 5effecd 26bdc40 --> LOAD_CONST_TREE_TO_MEMORY starting...
+20231124_165624_103434 5effecd 26bdc40 Starks::Starks() successfully copied 503316464 bytes from constant file config/recursive1/recursive1.consttree
+20231124_165624_103466 5effecd 26bdc40 <-- LOAD_CONST_TREE_TO_MEMORY done: 0.257942 s
+20231124_165624_103468 5effecd 26bdc40 --> LOAD_CONST_POLS_2NS_TO_MEMORY starting...
+20231124_165624_307626 5effecd 26bdc40 <-- LOAD_CONST_POLS_2NS_TO_MEMORY done: 0.204147 s
+20231124_165624_307651 5effecd 26bdc40 --> COMPUTE_X_N_AND_X_2_NS starting...
+20231124_165624_311578 5effecd 26bdc40 <-- COMPUTE_X_N_AND_X_2_NS done: 0.003922 s
+20231124_165624_325381 5effecd 26bdc40 --> MERKLE_TREE_ALLOCATION starting...
+20231124_165624_325417 5effecd 26bdc40 <-- MERKLE_TREE_ALLOCATION done: 0.000038 s
+20231124_165624_325424 5effecd 26bdc40 --> STARK_INFO_LOAD starting...
+20231124_165624_485374 5effecd 26bdc40 <-- STARK_INFO_LOAD done: 0.159941 s
+20231124_165624_537072 5effecd 26bdc40 --> LOAD_CONST_POLS_TO_MEMORY starting...
+20231124_165624_565072 5effecd 26bdc40 Starks::Starks() successfully copied 54525952 bytes from constant file config/recursive2/recursive2.const
+20231124_165624_565100 5effecd 26bdc40 <-- LOAD_CONST_POLS_TO_MEMORY done: 0.028027 s
+20231124_165624_565102 5effecd 26bdc40 --> LOAD_CONST_TREE_TO_MEMORY starting...
+20231124_165624_823321 5effecd 26bdc40 Starks::Starks() successfully copied 503316464 bytes from constant file config/recursive2/recursive2.consttree
+20231124_165624_823348 5effecd 26bdc40 <-- LOAD_CONST_TREE_TO_MEMORY done: 0.258241 s
+20231124_165624_823350 5effecd 26bdc40 --> LOAD_CONST_POLS_2NS_TO_MEMORY starting...
+20231124_165625_026551 5effecd 26bdc40 <-- LOAD_CONST_POLS_2NS_TO_MEMORY done: 0.203190 s
+20231124_165625_026574 5effecd 26bdc40 --> COMPUTE_X_N_AND_X_2_NS starting...
+20231124_165625_030450 5effecd 26bdc40 <-- COMPUTE_X_N_AND_X_2_NS done: 0.003872 s
+20231124_165625_044306 5effecd 26bdc40 --> MERKLE_TREE_ALLOCATION starting...
+20231124_165625_044338 5effecd 26bdc40 <-- MERKLE_TREE_ALLOCATION done: 0.000033 s
+20231124_165625_044354 5effecd 26bdc40 --> STARK_INFO_LOAD starting...
+20231124_165625_168720 5effecd 26bdc40 <-- STARK_INFO_LOAD done: 0.124359 s
+20231124_165625_211535 5effecd 26bdc40 --> LOAD_RECURSIVE_F_CONST_POLS_TO_MEMORY starting...
+20231124_165625_232647 5effecd 26bdc40 StarkRecursiveF::StarkRecursiveF() successfully copied 40894464 bytes from constant file config/recursivef/recursivef.const
+20231124_165625_232674 5effecd 26bdc40 <-- LOAD_RECURSIVE_F_CONST_POLS_TO_MEMORY done: 0.021138 s
+20231124_165625_232677 5effecd 26bdc40 --> LOAD_RECURSIVE_F_CONST_TREE_TO_MEMORY starting...
+20231124_165625_604105 5effecd 26bdc40 StarkRecursiveF::StarkRecursiveF() successfully copied 725894704 bytes from constant file config/recursivef/recursivef.consttree
+20231124_165625_604138 5effecd 26bdc40 <-- LOAD_RECURSIVE_F_CONST_TREE_TO_MEMORY done: 0.371458 s
+20231124_165625_604140 5effecd 26bdc40 --> LOAD_RECURSIVE_F_CONST_POLS_2NS_TO_MEMORY starting...
+20231124_165625_908912 5effecd 26bdc40 <-- LOAD_RECURSIVE_F_CONST_POLS_2NS_TO_MEMORY done: 0.304763 s
+20231124_165625_908932 5effecd 26bdc40 --> COMPUTE_X_N_AND_X_2_NS starting...
+20231124_165625_916560 5effecd 26bdc40 <-- COMPUTE_X_N_AND_X_2_NS done: 0.007624 s
+20231124_165625_917997 5effecd 26bdc40 <-- PROVER_CONSTRUCTOR done: 272.458309 s
+20231124_165625_918009 5effecd 26bdc40 Launching HashDB server thread...
+20231124_165625_918083 5effecd 26bdc40 --> INPUT_LOAD starting...
+20231124_165625_918436 5effecd 26bdc40 <-- INPUT_LOAD done: 0.000353 s
+20231124_165625_918458 5effecd 26bdc40 --> PROVER_BATCH_PROOF starting...
+20231124_165625_918607 5effecd 26bdc40 MEMORY INFO , MemTotal: 507352.917969 MB, MemFree: 265154.121094 MB, MemAvailable: 347223.253906 MB, Buffers: 7.238281 MB, Cached: 84701.046875 MB, SwapCached: 0.000000 MB, SwapTotal: 0.000000 MB, SwapFree: 0.000000 MB, VM: 462069.035156 MB, RSS: 37.959145 MB
+20231124_165625_918636 5effecd 26bdc40 PROCESS INFO, Pid: 47756, User time: 303.530000 s, Kernel time: 236.090000 s, Total time: 539.620000 s, Num threads: 131, Virtual mem: 462069 MB
+20231124_165625_918638 5effecd 26bdc40 Prover::genBatchProof() timestamp: 20231124_165625_918104
+20231124_165625_918640 5effecd 26bdc40 Prover::genBatchProof() UUID: 4a714ba8-72bc-4c16-a2fd-20f390fa1765
+20231124_165625_918644 5effecd 26bdc40 Prover::genBatchProof() input file: runtime/output/20231124_165625_918104_4a714ba8-72bc-4c16-a2fd-20f390fa1765.3.gen_batch_proof_input.json
+20231124_165625_918646 5effecd 26bdc40 --> EXECUTOR_EXECUTE_INITIALIZATION starting...
+20231124_165625_927273 5effecd 0fe5640 HashDB server listening on 0.0.0.0:50061
+20231124_165627_465596 5effecd 26bdc40 <-- EXECUTOR_EXECUTE_INITIALIZATION done: 1.546938 s
+20231124_165627_465640 5effecd 26bdc40 --> EXECUTOR_EXECUTE_BATCH_PROOF starting...
+20231124_165627_465643 5effecd 26bdc40 --> MAIN_EXECUTOR_EXECUTE starting...
+20231124_165627_465827 5effecd 26bdc40 DatabaseCache::addKeyValue() name=MTCache count=0 maxSize=8589934592 currentSize=0 attempts=0 hits=0 hit ratio=0.000000%
+20231124_165632_935815 5effecd 26bdc40 --> STATE_MANAGER_FLUSH starting...
+20231124_165632_935935 5effecd 26bdc40 State Manager calls: Duration=5455058us time/duration=0% flush success=114us(263%)(0%)=1times=114000ns/time read success=115us(265%)(0%)=199times=577ns/time read not found=27us(62%)(0%)=57times=473ns/time deleteNodes=24us(55%)(0%)=56times=428ns/time write=83us(191%)(0%)=106times=783ns/time setStateRoot=70us(161%)(0%)=40times=1750ns/time TOTAL=433us(1000)(0%)=459times=943ns/time
+20231124_165632_935959 5effecd 26bdc40 <-- STATE_MANAGER_FLUSH done: 0.000142 s
+20231124_165632_935970 5effecd 26bdc40 Database map: dbMetrics MT.size=0 cached=294times=155us=0us/time db=0times=0us=0us/time cacheHitRatio=100% PROGRAM.size=0 cached=0times=0us=0us/time db=0times=0us=0us/time cacheHitRatio=0% GET_TREE 0times=0us=0us/time=0fields=0.000000fields/time=0us/field
+20231124_165632_935975 5effecd 26bdc40 main_exec_generated() done lastStep=14330 (0.170827%)
+20231124_165632_936008 5effecd 26bdc40 <-- MAIN_EXECUTOR_EXECUTE done: 5.470364 s
+20231124_165632_936130 5effecd 68f9640 --> PADDING_PG_SM_EXECUTE_THREAD starting...
+20231124_165632_936157 5effecd dfe8640 --> ARITH_SM_EXECUTE_THREAD starting...
+20231124_165632_936204 5effecd d7e7640 --> BINARY_SM_EXECUTE_THREAD starting...
+20231124_165632_936222 5effecd cfe6640 --> MEM_ALIGN_SM_EXECUTE_THREAD starting...
+20231124_165632_936285 5effecd 7bfa640 --> PADDING_KK_SM_EXECUTE_THREAD starting...
+20231124_165632_936301 5effecd 83fb640 --> MEMORY_SM_EXECUTE_THREAD starting...
+20231124_165632_936315 5effecd 83fb640 --> MEMORY_EXECUTOR_REORDER starting...
+20231124_165632_939396 5effecd 83fb640 <-- MEMORY_EXECUTOR_REORDER done: 0.003078 s
+20231124_165632_982256 5effecd dfe8640 ArithExecutor successfully processed 998 arith actions (0.380707%)
+20231124_165632_982458 5effecd dfe8640 <-- ARITH_SM_EXECUTE_THREAD done: 0.046313 s
+20231124_165633_086293 5effecd 83fb640 MemoryExecutor successfully processed 9219 memory accesses (0.109899%)
+20231124_165633_086316 5effecd 83fb640 <-- MEMORY_SM_EXECUTE_THREAD done: 0.150082 s
+20231124_165633_313696 5effecd cfe6640 MemAlignExecutor successfully processed 0 memory align actions (0.000000%)
+20231124_165633_313725 5effecd cfe6640 <-- MEM_ALIGN_SM_EXECUTE_THREAD done: 0.377520 s
+20231124_165633_405941 5effecd 7bfa640 PaddingKKExecutor successfully processed 9 Keccak hashes p=8388608 pDone=1360 (0.016212%)
+20231124_165633_405966 5effecd 7bfa640 <-- PADDING_KK_SM_EXECUTE_THREAD done: 0.469696 s
+20231124_165633_405975 5effecd 7bfa640 --> PADDING_KK_BIT_SM_EXECUTE_THREAD starting...
+20231124_165633_495286 5effecd 68f9640 PaddingPGExecutor successfully processed 0 Poseidon hashes p=8388608 pDone=0 (0.000000%)
+20231124_165633_495310 5effecd 68f9640 <-- PADDING_PG_SM_EXECUTE_THREAD done: 0.559200 s
+20231124_165633_495312 5effecd 68f9640 --> STORAGE_SM_EXECUTE_THREAD starting...
+20231124_165633_533300 5effecd 7bfa640 PaddingKKBitExecutor successfully processed 2376 Keccak actions p=4735368 pDone=4735368 (56.449986%)
+20231124_165633_533316 5effecd 7bfa640 <-- PADDING_KK_BIT_SM_EXECUTE_THREAD done: 0.127340 s
+20231124_165633_533318 5effecd 7bfa640 --> BITS2FIELD_SM_EXECUTE_THREAD starting...
+20231124_165633_653647 5effecd 7bfa640 Bits2FieldExecutor successfully processed 2376 Keccak hashes (99.962282%)
+20231124_165633_653665 5effecd 7bfa640 <-- BITS2FIELD_SM_EXECUTE_THREAD done: 0.120346 s
+20231124_165633_653667 5effecd 7bfa640 --> KECCAK_F_SM_EXECUTE_THREAD starting...
+20231124_165633_713194 5effecd 7bfa640 KeccakFExecutor successfully processed 54 Keccak-F actions (99.962282%)
+20231124_165633_713243 5effecd 7bfa640 <-- KECCAK_F_SM_EXECUTE_THREAD done: 0.059573 s
+20231124_165634_582459 5effecd d7e7640 BinaryExecutor successfully processed 1731 binary actions (0.330162%)
+20231124_165634_582490 5effecd d7e7640 <-- BINARY_SM_EXECUTE_THREAD done: 1.646317 s
+20231124_165636_443293 5effecd 68f9640 StorageExecutor successfully processed 43 SMT actions (0.026810%)
+20231124_165636_443327 5effecd 68f9640 <-- STORAGE_SM_EXECUTE_THREAD done: 2.948013 s
+20231124_165636_443329 5effecd 68f9640 --> POSEIDON_G_SM_EXECUTE_THREAD starting...
+20231124_165636_785062 5effecd 68f9640 PoseidonGExecutor successfully processed 386 Poseidon hashes p=8388608 pDone=11966 (0.142646%)
+20231124_165636_785085 5effecd 68f9640 <-- POSEIDON_G_SM_EXECUTE_THREAD done: 0.341755 s
+20231124_165636_785560 5effecd 26bdc40 <-- EXECUTOR_EXECUTE_BATCH_PROOF done: 9.319915 s
+20231124_165636_785574 5effecd 26bdc40 --> SAVE_PUBLICS_JSON_BATCH_PROOF starting...
+20231124_165636_785660 5effecd 26bdc40 <-- SAVE_PUBLICS_JSON_BATCH_PROOF done: 0.000086 s
+20231124_165636_785662 5effecd 26bdc40 --> STARK_PROOF_BATCH_PROOF starting...
+20231124_165636_785741 5effecd 26bdc40 --> STARK_INITIALIZATION starting...
+20231124_165636_785781 5effecd 26bdc40 <-- STARK_INITIALIZATION done: 0.000040 s
+20231124_165636_785783 5effecd 26bdc40 --> STARK_STEP_1 starting...
+20231124_165636_785784 5effecd 26bdc40 --> STARK_STEP_1_LDE_AND_MERKLETREE starting...
+20231124_165636_785786 5effecd 26bdc40 --> STARK_STEP_1_LDE starting...
+20231124_165659_025268 5effecd 26bdc40 <-- STARK_STEP_1_LDE done: 22.239455 s
+20231124_165659_025314 5effecd 26bdc40 --> STARK_STEP_1_MERKLETREE starting...
+20231124_165739_970810 5effecd 26bdc40 <-- STARK_STEP_1_MERKLETREE done: 40.945482 s
+20231124_165739_970871 5effecd 26bdc40 MerkleTree rootGL 0: [ 7099365018763968037 15763205819112052455 14480387006991821056 3093032275867998684 ]
+20231124_165739_970880 5effecd 26bdc40 <-- STARK_STEP_1_LDE_AND_MERKLETREE done: 63.185094 s
+20231124_165739_970883 5effecd 26bdc40 <-- STARK_STEP_1 done: 63.185099 s
+20231124_165739_970886 5effecd 26bdc40 --> STARK_STEP_2 starting...
+20231124_165739_970889 5effecd 26bdc40 --> STARK_STEP_2_CALCULATE_EXPS_AVX starting...
+20231124_165743_748185 5effecd 26bdc40 <-- STARK_STEP_2_CALCULATE_EXPS_AVX done: 3.777284 s
+20231124_165743_748213 5effecd 26bdc40 --> STARK_STEP_2_CALCULATEH1H2_TRANSPOSE starting...
+20231124_165744_225551 5effecd 26bdc40 <-- STARK_STEP_2_CALCULATEH1H2_TRANSPOSE done: 0.477332 s
+20231124_165744_225595 5effecd 26bdc40 --> STARK_STEP_2_CALCULATEH1H2 starting...
+20231124_165745_888126 5effecd 26bdc40 <-- STARK_STEP_2_CALCULATEH1H2 done: 1.662523 s
+20231124_165745_888152 5effecd 26bdc40 --> STARK_STEP_2_CALCULATEH1H2_TRANSPOSE_2 starting...
+20231124_165747_205547 5effecd 26bdc40 <-- STARK_STEP_2_CALCULATEH1H2_TRANSPOSE_2 done: 1.317383 s
+20231124_165747_205590 5effecd 26bdc40 --> STARK_STEP_2_LDE_AND_MERKLETREE starting...
+20231124_165747_205620 5effecd 26bdc40 --> STARK_STEP_2_LDE starting...
+20231124_165751_117416 5effecd 26bdc40 <-- STARK_STEP_2_LDE done: 3.911785 s
+20231124_165751_117461 5effecd 26bdc40 --> STARK_STEP_2_MERKLETREE starting...
+20231124_165759_507373 5effecd 26bdc40 <-- STARK_STEP_2_MERKLETREE done: 8.389889 s
+20231124_165759_507451 5effecd 26bdc40 MerkleTree rootGL 1: [ 17051995045899884380 1101103059433086458 17805613577439443548 14996868442719839111 ]
+20231124_165759_507459 5effecd 26bdc40 <-- STARK_STEP_2_LDE_AND_MERKLETREE done: 12.301867 s
+20231124_165759_507463 5effecd 26bdc40 <-- STARK_STEP_2 done: 19.536577 s
+20231124_165759_507467 5effecd 26bdc40 --> STARK_STEP_3 starting...
+20231124_165759_507473 5effecd 26bdc40 --> STARK_STEP_3_CALCULATE_EXPS_AVX starting...
+20231124_165804_136320 5effecd 26bdc40 <-- STARK_STEP_3_CALCULATE_EXPS_AVX done: 4.628835 s
+20231124_165804_136358 5effecd 26bdc40 --> STARK_STEP_3_CALCULATE_Z_TRANSPOSE starting...
+20231124_165806_023052 5effecd 26bdc40 <-- STARK_STEP_3_CALCULATE_Z_TRANSPOSE done: 1.886680 s
+20231124_165806_023100 5effecd 26bdc40 --> STARK_STEP_3_CALCULATE_Z starting...
+20231124_165809_631079 5effecd 26bdc40 <-- STARK_STEP_3_CALCULATE_Z done: 3.607965 s
+20231124_165809_631119 5effecd 26bdc40 --> STARK_STEP_3_CALCULATE_Z_TRANSPOSE_2 starting...
+20231124_165810_185667 5effecd 26bdc40 <-- STARK_STEP_3_CALCULATE_Z_TRANSPOSE_2 done: 0.554534 s
+20231124_165810_185708 5effecd 26bdc40 --> STARK_STEP_3_CALCULATE_EXPS_2_AVX starting...
+20231124_165815_339098 5effecd 26bdc40 <-- STARK_STEP_3_CALCULATE_EXPS_2_AVX done: 5.153374 s
+20231124_165815_339152 5effecd 26bdc40 --> STARK_STEP_3_LDE_AND_MERKLETREE starting...
+20231124_165815_339156 5effecd 26bdc40 --> STARK_STEP_3_LDE starting...
+20231124_165825_896127 5effecd 26bdc40 <-- STARK_STEP_3_LDE done: 10.556956 s
+20231124_165825_896167 5effecd 26bdc40 --> STARK_STEP_3_MERKLETREE starting...
+20231124_165850_252595 5effecd 26bdc40 <-- STARK_STEP_3_MERKLETREE done: 24.356410 s
+20231124_165850_252658 5effecd 26bdc40 MerkleTree rootGL 2: [ 11927344460455018200 8406279753640964485 14247563033132209934 9564913711477631865 ]
+20231124_165850_252665 5effecd 26bdc40 <-- STARK_STEP_3_LDE_AND_MERKLETREE done: 34.913512 s
+20231124_165850_252669 5effecd 26bdc40 <-- STARK_STEP_3 done: 50.745201 s
+20231124_165850_252672 5effecd 26bdc40 --> STARK_STEP_4 starting...
+20231124_165850_252674 5effecd 26bdc40 --> STARK_STEP_4_INIT starting...
+20231124_165850_252709 5effecd 26bdc40 <-- STARK_STEP_4_INIT done: 0.000033 s
+20231124_165850_252712 5effecd 26bdc40 --> STARK_STEP_4_CALCULATE_EXPS_2NS_AVX starting...
