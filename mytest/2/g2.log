@@ -1,0 +1,189 @@
+goroutine profile: total 223
+192 @ 0x43e26e 0x4099ad 0x4095d2 0x11e5b35 0x471621
+#	0x11e5b34	github.com/ethereum/go-ethereum/core.(*txSenderCacher).cache+0x34	/go/pkg/mod/github.com/ethereum/go-ethereum@v1.13.2/core/sender_cacher.go:63
+
+4 @ 0x43e26e 0x44e705 0x8835b2 0x471621
+#	0x8835b1	google.golang.org/grpc/internal/grpcsync.(*CallbackSerializer).run+0x111	/go/pkg/mod/google.golang.org/grpc@v1.59.0/internal/grpcsync/callback_serializer.go:83
+
+4 @ 0x43e26e 0x44e705 0xc350c7 0x471621
+#	0xc350c6	github.com/jackc/pgx/v4/pgxpool.(*Pool).backgroundHealthCheck+0xc6	/go/pkg/mod/github.com/jackc/pgx/v4@v4.18.1/pgxpool/pool.go:428
+
+2 @ 0x43e26e 0x44e705 0x9fc1e7 0x471621
+#	0x9fc1e6	database/sql.(*DB).connectionOpener+0x86	/usr/local/go/src/database/sql/sql.go:1218
+
+1 @ 0x40eec9 0x46dde9 0x12c8693 0x471621
+#	0x46dde8	os/signal.signal_recv+0x28	/usr/local/go/src/runtime/sigqueue.go:152
+#	0x12c8692	os/signal.loop+0x12		/usr/local/go/src/os/signal/signal_unix.go:23
+
+1 @ 0x433091 0x46b61d 0xd2c211 0xd2c045 0xd28ae6 0x1532c88 0x1533785 0x703729 0x705042 0x70640e 0x7022f4 0x471621
+#	0x46b61c	runtime/pprof.runtime_goroutineProfileWithLabels+0x1c	/usr/local/go/src/runtime/mprof.go:844
+#	0xd2c210	runtime/pprof.writeRuntimeProfile+0xb0			/usr/local/go/src/runtime/pprof/pprof.go:734
+#	0xd2c044	runtime/pprof.writeGoroutine+0x44			/usr/local/go/src/runtime/pprof/pprof.go:694
+#	0xd28ae5	runtime/pprof.(*Profile).WriteTo+0x145			/usr/local/go/src/runtime/pprof/pprof.go:329
+#	0x1532c87	net/http/pprof.handler.ServeHTTP+0x4a7			/usr/local/go/src/net/http/pprof/pprof.go:267
+#	0x1533784	net/http/pprof.Index+0xe4				/usr/local/go/src/net/http/pprof/pprof.go:384
+#	0x703728	net/http.HandlerFunc.ServeHTTP+0x28			/usr/local/go/src/net/http/server.go:2136
+#	0x705041	net/http.(*ServeMux).ServeHTTP+0x141			/usr/local/go/src/net/http/server.go:2514
+#	0x70640d	net/http.serverHandler.ServeHTTP+0x8d			/usr/local/go/src/net/http/server.go:2938
+#	0x7022f3	net/http.(*conn).serve+0x5f3				/usr/local/go/src/net/http/server.go:2009
+
+1 @ 0x43e26e 0x409739 0x4095b2 0x143f7d9 0x471621
+#	0x143f7d8	github.com/0xPolygonHermez/zkevm-node/sequencer.(*Sequencer).Start+0xbf8	/src/sequencer/sequencer.go:139
+
+1 @ 0x43e26e 0x4099ad 0x4095b2 0x142a334 0x471621
+#	0x142a333	github.com/0xPolygonHermez/zkevm-node/sequencer.(*dbManager).countPendingTx+0x33	/src/sequencer/dbmanager.go:157
+
+1 @ 0x43e26e 0x4099ad 0x4095d2 0x1557a7d 0x1554d45 0x1501478 0x15016c5 0x14fddf7 0x155134a 0x1551323 0x43ddfb 0x471621
+#	0x1557a7c	main.waitSignal+0x7c					/src/cmd/run.go:468
+#	0x1554d44	main.start+0x23c4					/src/cmd/run.go:259
+#	0x1501477	github.com/urfave/cli/v2.(*Command).Run+0x997		/go/pkg/mod/github.com/urfave/cli/v2@v2.25.7/command.go:274
+#	0x15016c4	github.com/urfave/cli/v2.(*Command).Run+0xbe4		/go/pkg/mod/github.com/urfave/cli/v2@v2.25.7/command.go:267
+#	0x14fddf6	github.com/urfave/cli/v2.(*App).RunContext+0x5b6	/go/pkg/mod/github.com/urfave/cli/v2@v2.25.7/app.go:332
+#	0x1551349	github.com/urfave/cli/v2.(*App).Run+0xbe9		/go/pkg/mod/github.com/urfave/cli/v2@v2.25.7/app.go:309
+#	0x1551322	main.main+0xbc2						/src/cmd/main.go:191
+#	0x43ddfa	runtime.main+0x2ba					/usr/local/go/src/runtime/proc.go:267
+
+1 @ 0x43e26e 0x436ab7 0x46ba45 0x4e3787 0x4e4a7a 0x4e4a68 0x5834e5 0x594f05 0x4baf50 0xaefc5e 0xaefc68 0xaf7f82 0xb2fc82 0xb37e6d 0xb344d5 0xb33a45 0xbefcdf 0xbeeff1 0xbee856 0xc33171 0xc36067 0x154b0f2 0x12cbc9e 0x142bf64 0x1437646 0x142f990 0x471621
+#	0x46ba44	internal/poll.runtime_pollWait+0x84									/usr/local/go/src/runtime/netpoll.go:343
+#	0x4e3786	internal/poll.(*pollDesc).wait+0x26									/usr/local/go/src/internal/poll/fd_poll_runtime.go:84
+#	0x4e4a79	internal/poll.(*pollDesc).waitRead+0x279								/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+#	0x4e4a67	internal/poll.(*FD).Read+0x267										/usr/local/go/src/internal/poll/fd_unix.go:164
+#	0x5834e4	net.(*netFD).Read+0x24											/usr/local/go/src/net/fd_posix.go:55
+#	0x594f04	net.(*conn).Read+0x44											/usr/local/go/src/net/net.go:179
+#	0x4baf4f	io.ReadAtLeast+0x8f											/usr/local/go/src/io/io.go:335
+#	0xaefc5d	github.com/jackc/chunkreader/v2.(*ChunkReader).appendAtLeast+0x29d					/go/pkg/mod/github.com/jackc/chunkreader/v2@v2.0.1/chunkreader.go:88
+#	0xaefc67	github.com/jackc/chunkreader/v2.(*ChunkReader).Next+0x2a7						/go/pkg/mod/github.com/jackc/chunkreader/v2@v2.0.1/chunkreader.go:78
+#	0xaf7f81	github.com/jackc/pgproto3/v2.(*Frontend).Receive+0x41							/go/pkg/mod/github.com/jackc/pgproto3/v2@v2.3.2/frontend.go:74
+#	0xb2fc81	github.com/jackc/pgconn.(*PgConn).peekMessage+0x141							/go/pkg/mod/github.com/jackc/pgconn@v1.14.1/pgconn.go:534
+#	0xb37e6c	github.com/jackc/pgconn.(*ResultReader).readUntilRowDescription+0x2c					/go/pkg/mod/github.com/jackc/pgconn@v1.14.1/pgconn.go:1570
+#	0xb344d4	github.com/jackc/pgconn.(*PgConn).execExtendedSuffix+0x434						/go/pkg/mod/github.com/jackc/pgconn@v1.14.1/pgconn.go:1167
+#	0xb33a44	github.com/jackc/pgconn.(*PgConn).ExecPrepared+0x184							/go/pkg/mod/github.com/jackc/pgconn@v1.14.1/pgconn.go:1112
+#	0xbefcde	github.com/jackc/pgx/v4.(*Conn).execPrepared+0xde							/go/pkg/mod/github.com/jackc/pgx/v4@v4.18.1/conn.go:510
+#	0xbeeff0	github.com/jackc/pgx/v4.(*Conn).exec+0x1b0								/go/pkg/mod/github.com/jackc/pgx/v4@v4.18.1/conn.go:441
+#	0xbee855	github.com/jackc/pgx/v4.(*Conn).Exec+0xb5								/go/pkg/mod/github.com/jackc/pgx/v4@v4.18.1/conn.go:389
+#	0xc33170	github.com/jackc/pgx/v4/pgxpool.(*Conn).Exec+0x50							/go/pkg/mod/github.com/jackc/pgx/v4@v4.18.1/pgxpool/conn.go:83
+#	0xc36066	github.com/jackc/pgx/v4/pgxpool.(*Pool).Exec+0x126							/go/pkg/mod/github.com/jackc/pgx/v4@v4.18.1/pgxpool/pool.go:600
+#	0x154b0f1	github.com/0xPolygonHermez/zkevm-node/pool/pgpoolstorage.(*PostgresPoolStorage).UpdateTxStatus+0x351	/src/pool/pgpoolstorage/pgpoolstorage.go:387
+#	0x12cbc9d	github.com/0xPolygonHermez/zkevm-node/pool.(*Pool).UpdateTxStatus+0xbd					/src/pool/pool.go:369
+#	0x142bf63	github.com/0xPolygonHermez/zkevm-node/sequencer.(*dbManager).StoreProcessedTxAndDeleteFromPool+0x5e3	/src/sequencer/dbmanager.go:339
+#	0x1437645	github.com/0xPolygonHermez/zkevm-node/sequencer.(*finalizer).storeProcessedTx+0x145			/src/sequencer/finalizer.go:964
+#	0x142f98f	github.com/0xPolygonHermez/zkevm-node/sequencer.(*finalizer).storePendingTransactions+0x22f		/src/sequencer/finalizer.go:221
+
+1 @ 0x43e26e 0x436ab7 0x46ba45 0x4e3787 0x4e4a7a 0x4e4a68 0x5834e5 0x594f05 0x4baf50 0xaefc5e 0xaefc68 0xaf7f82 0xb2fc82 0xb37e6d 0xb344d5 0xb33a45 0xbefcdf 0xbeeff1 0xbee856 0xc33171 0xc36067 0x154e285 0x12cdb1e 0x142b78f 0x142a285 0x471621
+#	0x46ba44	internal/poll.runtime_pollWait+0x84									/usr/local/go/src/runtime/netpoll.go:343
+#	0x4e3786	internal/poll.(*pollDesc).wait+0x26									/usr/local/go/src/internal/poll/fd_poll_runtime.go:84
+#	0x4e4a79	internal/poll.(*pollDesc).waitRead+0x279								/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+#	0x4e4a67	internal/poll.(*FD).Read+0x267										/usr/local/go/src/internal/poll/fd_unix.go:164
+#	0x5834e4	net.(*netFD).Read+0x24											/usr/local/go/src/net/fd_posix.go:55
+#	0x594f04	net.(*conn).Read+0x44											/usr/local/go/src/net/net.go:179
+#	0x4baf4f	io.ReadAtLeast+0x8f											/usr/local/go/src/io/io.go:335
+#	0xaefc5d	github.com/jackc/chunkreader/v2.(*ChunkReader).appendAtLeast+0x29d					/go/pkg/mod/github.com/jackc/chunkreader/v2@v2.0.1/chunkreader.go:88
+#	0xaefc67	github.com/jackc/chunkreader/v2.(*ChunkReader).Next+0x2a7						/go/pkg/mod/github.com/jackc/chunkreader/v2@v2.0.1/chunkreader.go:78
+#	0xaf7f81	github.com/jackc/pgproto3/v2.(*Frontend).Receive+0x41							/go/pkg/mod/github.com/jackc/pgproto3/v2@v2.3.2/frontend.go:74
+#	0xb2fc81	github.com/jackc/pgconn.(*PgConn).peekMessage+0x141							/go/pkg/mod/github.com/jackc/pgconn@v1.14.1/pgconn.go:534
+#	0xb37e6c	github.com/jackc/pgconn.(*ResultReader).readUntilRowDescription+0x2c					/go/pkg/mod/github.com/jackc/pgconn@v1.14.1/pgconn.go:1570
+#	0xb344d4	github.com/jackc/pgconn.(*PgConn).execExtendedSuffix+0x434						/go/pkg/mod/github.com/jackc/pgconn@v1.14.1/pgconn.go:1167
+#	0xb33a44	github.com/jackc/pgconn.(*PgConn).ExecPrepared+0x184							/go/pkg/mod/github.com/jackc/pgconn@v1.14.1/pgconn.go:1112
+#	0xbefcde	github.com/jackc/pgx/v4.(*Conn).execPrepared+0xde							/go/pkg/mod/github.com/jackc/pgx/v4@v4.18.1/conn.go:510
+#	0xbeeff0	github.com/jackc/pgx/v4.(*Conn).exec+0x1b0								/go/pkg/mod/github.com/jackc/pgx/v4@v4.18.1/conn.go:441
+#	0xbee855	github.com/jackc/pgx/v4.(*Conn).Exec+0xb5								/go/pkg/mod/github.com/jackc/pgx/v4@v4.18.1/conn.go:389
+#	0xc33170	github.com/jackc/pgx/v4/pgxpool.(*Conn).Exec+0x50							/go/pkg/mod/github.com/jackc/pgx/v4@v4.18.1/pgxpool/conn.go:83
+#	0xc36066	github.com/jackc/pgx/v4/pgxpool.(*Pool).Exec+0x126							/go/pkg/mod/github.com/jackc/pgx/v4@v4.18.1/pgxpool/pool.go:600
+#	0x154e284	github.com/0xPolygonHermez/zkevm-node/pool/pgpoolstorage.(*PostgresPoolStorage).UpdateTxWIPStatus+0x164	/src/pool/pgpoolstorage/pgpoolstorage.go:713
+#	0x12cdb1d	github.com/0xPolygonHermez/zkevm-node/pool.(*Pool).UpdateTxWIPStatus+0x3d				/src/pool/pool.go:662
+#	0x142b78e	github.com/0xPolygonHermez/zkevm-node/sequencer.(*dbManager).addTxToWorker+0x2ce			/src/sequencer/dbmanager.go:275
+#	0x142a284	github.com/0xPolygonHermez/zkevm-node/sequencer.(*dbManager).loadFromPool+0x1c4				/src/sequencer/dbmanager.go:145
+
+1 @ 0x43e26e 0x436ab7 0x46ba45 0x4e3787 0x4e4a7a 0x4e4a68 0x5834e5 0x594f05 0x64b49b 0x517158 0x64b67e 0x648c50 0x64ef18 0x64ef21 0x68b877 0x4baf50 0x6c5ee5 0x6c5eb4 0x6c6625 0x6e951f 0x6e8aa5 0x471621
+#	0x46ba44	internal/poll.runtime_pollWait+0x84		/usr/local/go/src/runtime/netpoll.go:343
+#	0x4e3786	internal/poll.(*pollDesc).wait+0x26		/usr/local/go/src/internal/poll/fd_poll_runtime.go:84
+#	0x4e4a79	internal/poll.(*pollDesc).waitRead+0x279	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+#	0x4e4a67	internal/poll.(*FD).Read+0x267			/usr/local/go/src/internal/poll/fd_unix.go:164
+#	0x5834e4	net.(*netFD).Read+0x24				/usr/local/go/src/net/fd_posix.go:55
+#	0x594f04	net.(*conn).Read+0x44				/usr/local/go/src/net/net.go:179
+#	0x64b49a	crypto/tls.(*atLeastReader).Read+0x3a		/usr/local/go/src/crypto/tls/conn.go:805
+#	0x517157	bytes.(*Buffer).ReadFrom+0x97			/usr/local/go/src/bytes/buffer.go:211
+#	0x64b67d	crypto/tls.(*Conn).readFromUntil+0xdd		/usr/local/go/src/crypto/tls/conn.go:827
+#	0x648c4f	crypto/tls.(*Conn).readRecordOrCCS+0x24f	/usr/local/go/src/crypto/tls/conn.go:625
+#	0x64ef17	crypto/tls.(*Conn).readRecord+0x157		/usr/local/go/src/crypto/tls/conn.go:587
+#	0x64ef20	crypto/tls.(*Conn).Read+0x160			/usr/local/go/src/crypto/tls/conn.go:1369
+#	0x68b876	bufio.(*Reader).Read+0x196			/usr/local/go/src/bufio/bufio.go:244
+#	0x4baf4f	io.ReadAtLeast+0x8f				/usr/local/go/src/io/io.go:335
+#	0x6c5ee4	io.ReadFull+0x64				/usr/local/go/src/io/io.go:354
+#	0x6c5eb3	net/http.http2readFrameHeader+0x33		/usr/local/go/src/net/http/h2_bundle.go:1635
+#	0x6c6624	net/http.(*http2Framer).ReadFrame+0x84		/usr/local/go/src/net/http/h2_bundle.go:1899
+#	0x6e951e	net/http.(*http2clientConnReadLoop).run+0x11e	/usr/local/go/src/net/http/h2_bundle.go:9339
+#	0x6e8aa4	net/http.(*http2ClientConn).readLoop+0x64	/usr/local/go/src/net/http/h2_bundle.go:9234
+
+1 @ 0x43e26e 0x436ab7 0x46ba45 0x4e3787 0x4e4a7a 0x4e4a68 0x5834e5 0x594f05 0x68b877 0x4baf50 0x8aa545 0x8aa514 0x8aac85 0x8d0e05 0x471621
+#	0x46ba44	internal/poll.runtime_pollWait+0x84					/usr/local/go/src/runtime/netpoll.go:343
+#	0x4e3786	internal/poll.(*pollDesc).wait+0x26					/usr/local/go/src/internal/poll/fd_poll_runtime.go:84
+#	0x4e4a79	internal/poll.(*pollDesc).waitRead+0x279				/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+#	0x4e4a67	internal/poll.(*FD).Read+0x267						/usr/local/go/src/internal/poll/fd_unix.go:164
+#	0x5834e4	net.(*netFD).Read+0x24							/usr/local/go/src/net/fd_posix.go:55
+#	0x594f04	net.(*conn).Read+0x44							/usr/local/go/src/net/net.go:179
+#	0x68b876	bufio.(*Reader).Read+0x196						/usr/local/go/src/bufio/bufio.go:244
+#	0x4baf4f	io.ReadAtLeast+0x8f							/usr/local/go/src/io/io.go:335
+#	0x8aa544	io.ReadFull+0x64							/usr/local/go/src/io/io.go:354
+#	0x8aa513	golang.org/x/net/http2.readFrameHeader+0x33				/go/pkg/mod/golang.org/x/net@v0.17.0/http2/frame.go:237
+#	0x8aac84	golang.org/x/net/http2.(*Framer).ReadFrame+0x84				/go/pkg/mod/golang.org/x/net@v0.17.0/http2/frame.go:498
+#	0x8d0e04	google.golang.org/grpc/internal/transport.(*http2Client).reader+0x244	/go/pkg/mod/google.golang.org/grpc@v1.59.0/internal/transport/http2_client.go:1585
+
+1 @ 0x43e26e 0x436ab7 0x46ba45 0x4e3787 0x4e8c6c 0x4e8c5a 0x585509 0x59ddbe 0x59cf70 0x706864 0x15587b2 0x471621
+#	0x46ba44	internal/poll.runtime_pollWait+0x84		/usr/local/go/src/runtime/netpoll.go:343
+#	0x4e3786	internal/poll.(*pollDesc).wait+0x26		/usr/local/go/src/internal/poll/fd_poll_runtime.go:84
+#	0x4e8c6b	internal/poll.(*pollDesc).waitRead+0x2ab	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+#	0x4e8c59	internal/poll.(*FD).Accept+0x299		/usr/local/go/src/internal/poll/fd_unix.go:611
+#	0x585508	net.(*netFD).accept+0x28			/usr/local/go/src/net/fd_unix.go:172
+#	0x59ddbd	net.(*TCPListener).accept+0x1d			/usr/local/go/src/net/tcpsock_posix.go:152
+#	0x59cf6f	net.(*TCPListener).Accept+0x2f			/usr/local/go/src/net/tcpsock.go:315
+#	0x706863	net/http.(*Server).Serve+0x363			/usr/local/go/src/net/http/server.go:3056
+#	0x15587b1	main.startProfilingHttpServer+0x2b1		/src/cmd/run.go:561
+
+1 @ 0x43e26e 0x44e705 0x142fd05 0x471621
+#	0x142fd04	github.com/0xPolygonHermez/zkevm-node/sequencer.(*finalizer).listenForClosingSignals+0x124	/src/sequencer/finalizer.go:271
+
+1 @ 0x43e26e 0x44e705 0x14404a8 0x144045f 0x471621
+#	0x14404a7	github.com/0xPolygonHermez/zkevm-node/sequencer.waitTick+0xa7				/src/sequencer/sequencer.go:235
+#	0x144045e	github.com/0xPolygonHermez/zkevm-node/sequencer.(*Sequencer).purgeOldPoolTxs+0x5e	/src/sequencer/sequencer.go:208
+
+1 @ 0x43e26e 0x44e705 0x8bd1f3 0x8bd906 0x8c6ea5 0x471621
+#	0x8bd1f2	google.golang.org/grpc/internal/transport.(*controlBuffer).get+0x112	/go/pkg/mod/google.golang.org/grpc@v1.59.0/internal/transport/controlbuf.go:418
+#	0x8bd905	google.golang.org/grpc/internal/transport.(*loopyWriter).run+0x85	/go/pkg/mod/google.golang.org/grpc@v1.59.0/internal/transport/controlbuf.go:552
+#	0x8c6ea4	google.golang.org/grpc/internal/transport.newHTTP2Client.func6+0x84	/go/pkg/mod/google.golang.org/grpc@v1.59.0/internal/transport/http2_client.go:451
+
+1 @ 0x43e26e 0x44f738 0x44f70f 0x46d685 0x48fc68 0x1431b68 0x1431312 0x1430c10 0x142f5df 0x471621
+#	0x46d684	sync.runtime_Semacquire+0x24								/usr/local/go/src/runtime/sema.go:62
+#	0x48fc67	sync.(*WaitGroup).Wait+0x47								/usr/local/go/src/sync/waitgroup.go:116
+#	0x1431b67	github.com/0xPolygonHermez/zkevm-node/sequencer.(*finalizer).newWIPBatch+0xe7		/src/sequencer/finalizer.go:515
+#	0x1431311	github.com/0xPolygonHermez/zkevm-node/sequencer.(*finalizer).finalizeBatch+0x111	/src/sequencer/finalizer.go:457
+#	0x1430c0f	github.com/0xPolygonHermez/zkevm-node/sequencer.(*finalizer).finalizeBatches+0x68f	/src/sequencer/finalizer.go:405
+#	0x142f5de	github.com/0xPolygonHermez/zkevm-node/sequencer.(*finalizer).Start+0x2de		/src/sequencer/finalizer.go:195
+
+1 @ 0x43e26e 0x46d9f9 0x46d9d9 0x48c605 0x142faa5 0x471621
+#	0x46d9d8	sync.runtime_notifyListWait+0x138								/usr/local/go/src/runtime/sema.go:527
+#	0x48c604	sync.(*Cond).Wait+0x84										/usr/local/go/src/sync/cond.go:70
+#	0x142faa4	github.com/0xPolygonHermez/zkevm-node/sequencer.(*finalizer).updateProverIdAndFlushId+0x64	/src/sequencer/finalizer.go:244
+
+1 @ 0x43e26e 0x46e765 0x12ce253 0x471621
+#	0x46e764	time.Sleep+0x124						/usr/local/go/src/runtime/time.go:195
+#	0x12ce252	github.com/0xPolygonHermez/zkevm-node/pool.NewPool.func1+0x32	/src/pool/pool.go:100
+
+1 @ 0x43e26e 0x46e765 0x1428f08 0x471621
+#	0x46e764	time.Sleep+0x124										/usr/local/go/src/runtime/time.go:195
+#	0x1428f07	github.com/0xPolygonHermez/zkevm-node/sequencer.(*closingSignalsManager).checkGERUpdate+0xe7	/src/sequencer/closingsignalsmanager.go:37
+
+1 @ 0x43e26e 0x46e765 0x142918a 0x471621
+#	0x46e764	time.Sleep+0x124											/usr/local/go/src/runtime/time.go:195
+#	0x1429189	github.com/0xPolygonHermez/zkevm-node/sequencer.(*closingSignalsManager).checkForcedBatches+0x29	/src/sequencer/closingsignalsmanager.go:66
+
+1 @ 0x43e26e 0x46e765 0x14298e5 0x471621
+#	0x46e764	time.Sleep+0x124								/usr/local/go/src/runtime/time.go:195
+#	0x14298e4	github.com/0xPolygonHermez/zkevm-node/sequencer.(*dbManager).Start.func1+0x24	/src/sequencer/dbmanager.go:70
+
+1 @ 0x43e26e 0x46e765 0x143f89a 0x471621
+#	0x46e764	time.Sleep+0x124								/usr/local/go/src/runtime/time.go:195
+#	0x143f899	github.com/0xPolygonHermez/zkevm-node/sequencer.(*Sequencer).Start.func1+0x59	/src/sequencer/sequencer.go:125
+
+1 @ 0x471621
+
